@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <script>
+const sumAll = function(firstNumber, secondNumber) {
+
+let numbersBetween = []
+let numberSum = 0
+
+if (firstNumber <= -1 || secondNumber <= -1) {
+        return "ERROR"
+    } 
+    
+else if(firstNumber > secondNumber) {
+    for (let i = firstNumber; i >= secondNumber; i--) {
+        numbersBetween.push(i)
+        numberSum += i 
+} 
+return numberSum
+} 
+
+else if(firstNumber <= secondNumber) {
+    for (let i = firstNumber; i <= secondNumber; i++) {
+        numbersBetween.push(i)
+        numberSum += i
+}
+return numberSum
+}
+};
+
+sumAll(1, 4)
+    </script>
+</body>
+</html>
